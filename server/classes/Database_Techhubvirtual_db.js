@@ -38,7 +38,11 @@ import properties from "../properties.js";
 
 // Start Import Models
 
-import MembersModel from "../models/Techhubvirtual_db/MembersModel";
+import FreelancerModel from "../models/Techhubvirtual_db/FreelancerModel";
+import InvestorModel from "../models/Techhubvirtual_db/InvestorModel";
+import MentorModel from "../models/Techhubvirtual_db/MentorModel";
+import PartnerModel from "../models/Techhubvirtual_db/PartnerModel";
+import StartupModel from "../models/Techhubvirtual_db/StartupModel";
 import UserModel from "../models/Techhubvirtual_db/UserModel";
 
 // End Import Models
@@ -55,7 +59,11 @@ class Database {
 
     // Start Init Models
 
-		MembersModel.init();
+		FreelancerModel.init();
+		InvestorModel.init();
+		MentorModel.init();
+		PartnerModel.init();
+		StartupModel.init();
 		UserModel.init();
  // End Init Models
   }

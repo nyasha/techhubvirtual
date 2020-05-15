@@ -122,7 +122,47 @@ class Navbar extends React.Component {
         <Divider />
         <List>
           {/* START LINK MENU */}
- {/* END LINK MENU */}
+            
+           <Link to="/freelancers">
+            <ListItem button key="Freelancer">
+              <ListItemIcon>
+                <ArrowForwardIos />
+              </ListItemIcon>
+              <ListItemText className="menu-text" primary="Freelancer" />
+            </ListItem>
+          </Link>{" "}            
+           <Link to="/investors">
+            <ListItem button key="Investor">
+              <ListItemIcon>
+                <ArrowForwardIos />
+              </ListItemIcon>
+              <ListItemText className="menu-text" primary="Investor" />
+            </ListItem>
+          </Link>{" "}            
+           <Link to="/mentors">
+            <ListItem button key="Mentor">
+              <ListItemIcon>
+                <ArrowForwardIos />
+              </ListItemIcon>
+              <ListItemText className="menu-text" primary="Mentor" />
+            </ListItem>
+          </Link>{" "}            
+           <Link to="/partners">
+            <ListItem button key="Partner">
+              <ListItemIcon>
+                <ArrowForwardIos />
+              </ListItemIcon>
+              <ListItemText className="menu-text" primary="Partner" />
+            </ListItem>
+          </Link>{" "}            
+           <Link to="/startups">
+            <ListItem button key="Startup">
+              <ListItemIcon>
+                <ArrowForwardIos />
+              </ListItemIcon>
+              <ListItemText className="menu-text" primary="Startup" />
+            </ListItem>
+          </Link>{" "} {/* END LINK MENU */}
         </List>
       </div>
     );

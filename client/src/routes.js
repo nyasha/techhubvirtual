@@ -40,7 +40,16 @@ import Paper from "@material-ui/core/Paper";
 
 /* START MY VIEWS IMPORT */
 
-import MembersEdit from "./pages/MembersEdit";
+import FreelancerEdit from "./pages/FreelancerEdit";
+import FreelancerList from "./pages/FreelancerList";
+import InvestorEdit from "./pages/InvestorEdit";
+import InvestorList from "./pages/InvestorList";
+import MentorEdit from "./pages/MentorEdit";
+import MentorList from "./pages/MentorList";
+import PartnerEdit from "./pages/PartnerEdit";
+import PartnerList from "./pages/PartnerList";
+import StartupEdit from "./pages/StartupEdit";
+import StartupList from "./pages/StartupList";
 
 /* END MY VIEWS IMPORT */
 
@@ -70,7 +79,16 @@ class Routes extends Component {
 
               {/* START MY VIEWS */}
 
-              <PrivateRoute exact path="/memberses/:id" component={ MembersEdit }  />
+              <PrivateRoute exact path="/freelancers/:id" component={ FreelancerEdit }  />
+              <PrivateRoute exact path="/freelancers" component={ FreelancerList }  />
+              <PrivateRoute exact path="/investors/:id" component={ InvestorEdit }  />
+              <PrivateRoute exact path="/investors" component={ InvestorList }  />
+              <PrivateRoute exact path="/mentors/:id" component={ MentorEdit }  />
+              <PrivateRoute exact path="/mentors" component={ MentorList }  />
+              <PrivateRoute exact path="/partners/:id" component={ PartnerEdit }  />
+              <PrivateRoute exact path="/partners" component={ PartnerList }  />
+              <PrivateRoute exact path="/startups/:id" component={ StartupEdit }  />
+              <PrivateRoute exact path="/startups" component={ StartupList }  />
 
              {/* END MY VIEWS */}
 
